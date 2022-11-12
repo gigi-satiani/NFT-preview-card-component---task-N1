@@ -1,0 +1,113 @@
+.App {
+  width: 100%;
+  height: 100vh;
+  background-color: #282c34;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.App-Card {
+  max-width: 320px;
+  height: 570px;
+  display: flex;
+  flex-direction: column;
+  background: #15263F;
+  color: rgb(255, 255, 255);
+  padding: 20px;
+  border-radius: 15px;
+}
+.MainFigure {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.Quilimg {
+  width: 100%;
+  height: 302px;
+  position: absolute;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.TigerEye {
+  left: 43%;
+  top: 130px;
+  background: #00FFF8;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  padding: 43%;
+  cursor: pointer;
+  border-radius: 8px;
+  visibility: hidden;
+}
+
+.MainFigure:hover .TigerEye {
+  visibility: visible;
+}
+
+h3 {
+  width: 100%;
+  font-size: 20px;
+  font-family: sans-serif;
+  cursor: pointer;
+}
+h3:hover {
+  color: cyan;
+}
+p {
+  font-size: 18px;
+  font-weight: 300;
+  color: #8BACD9;
+  padding-bottom: 10px;
+}
+.EtherTextParent {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 0.5px solid #2E405A;
+  padding-bottom: 20px;
+}
+.Etherium {
+  width: 11px;
+  height: 18px;
+  position: relative;
+}
+.EtherSpan span {
+  color: #00FFF8;
+  font-size: 16px;
+  font-weight: 600;
+  margin-left: 8px;
+}
+.ClokSpan span {
+  margin-left: 8px;
+  color: #8BACD9;
+}
+
+.Liner {
+  width: 100%;
+  color: #2E405A;
+  margin-top: 20px;
+  height: 1px;
+  background-color: #2E405A;
+}
+.CardFooter {
+  width: 100%;
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.Jules {
+  width: 33px;
+  height: 33px;
+  border: 1px solid #fff;
+  border-radius: 50px;
+}
+.JulesSpan {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+}
+.JulesSpan:hover {
+  color: cyan;
+}
