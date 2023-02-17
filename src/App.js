@@ -1,16 +1,6 @@
 import { isVisible } from '@testing-library/user-event/dist/utils';
 import './App.css';
 
-// let Show = document.getElementById('ShowHide');
-// Show.addEventListener("onMouseEnter", foonc);
-// Show.addEventListener("onMouseLeave", foonc1);
-
-// function foonc() {
-//   Show.classList.add('showEye')
-// }
-// function foonc1() {
-//   Show.classList.remove('hideEye')
-// }
 
 function App() {
   return (
@@ -45,17 +35,5 @@ function App() {
     </div>
   );
 }
-
-// function showEye() {
-//   let eye = document.querySelector('#ShowHide')
-//   if (eye.classList.contains('hideEye')) {
-//     eye.classList.add('showEye')
-//     eye.classList.remove('hideEye')
-//   }
-//   else {
-//     eye.classList.add('hideEye')
-//     eye.classList.remove('showEye')
-//   }
-// }
 
 export default App;
