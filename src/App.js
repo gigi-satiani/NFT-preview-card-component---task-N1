@@ -1,35 +1,45 @@
-import { isVisible } from '@testing-library/user-event/dist/utils';
-import './App.css';
-
+import "./App.css";
+import logo from "./images/quil.jpg";
+import eye from "./images/Shape.png";
+import etheriumm from "./images/icon-ethereum.svg";
+import clock from "./images/icon-clock.svg";
+import female from "./images/image-avatar.png";
 
 function App() {
   return (
     <div className="App">
       <div className="App-Card">
-       <div className='MainFigure'>
-        <img src={require('./images/quil.jpg')} className='Quilimg' />
-        <img src={require('./images/Shape.png')} className='TigerEye' 
-         id='ShowHide' />
-       </div>
-        <h3>
-          Equilibrium #3429
-        </h3>
-        <p>
-          Our Equilibrium collection promotes balance and calm
-        </p>
-        <div className='EtherTextParent'>
-         <div className='EtherSpan'>
-         <img src='http://127.0.0.1:5500/src/images/icon-ethereum.svg' />
-         <span>0.041ETH</span>
-         </div>
-         <div className='ClokSpan'>
-          <img src='http://127.0.0.1:5500/src/images/icon-clock.svg' />
-          <span>3 days left</span>
-         </div>
+        <div className="MainFigure">
+          <figure className="">
+            <img alt="" src={logo} className="Quilimg" />
+            <img alt="" src={eye} className="TigerEye" />
+          </figure>
         </div>
-        <div className='CardFooter'>
-        <img src={require('./images/image-avatar.png')} className='Jules' />
-        <p>Creation of <span className='JulesSpan'>Jules Wyvern</span></p>
+        <div className="topText">
+          <h3>Equilibrium #3429</h3>
+          <p>Our Equilibrium collection promotes balance and calm</p>
+        </div>
+        <div className="EtherTextParent">
+          <div className="EtherSpan">
+            <figure className="">
+              <img alt="" src={etheriumm} />
+            </figure>
+            <span>0.041ETH</span>
+          </div>
+          <div className="ClokSpan">
+            <figure className="">
+              <img alt="" src={clock} />
+            </figure>
+            <span>3 days left</span>
+          </div>
+        </div>
+        <div className="CardFooter">
+          <figure className="">
+            <img alt="" src={female} className="Jules" />
+          </figure>
+          <p>
+            Creation of <span className="JulesSpan">Jules Wyvern</span>
+          </p>
         </div>
       </div>
     </div>
